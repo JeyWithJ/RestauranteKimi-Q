@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $host = "127.0.0.1:3310";
         $username = "root";
         $password = "";
-        $dbname = "inisiodesesion";
+        $dbname = "inisiodesesion"; //Cambio de nombre a la sesion 2
 
     $conexion = new mysqli($host, $username, $password, $dbname);
 

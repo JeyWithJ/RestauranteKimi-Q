@@ -3,7 +3,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Recoger el ID del usuario a eliminar
     $userID = $_POST["userID"];
 
-    // Conectarse a la base de datos (ajusta los datos de conexión)
+    // Conectarse a la base de datos
     $host = "127.0.0.1:3310";
     $username = "root";
     $password = "";

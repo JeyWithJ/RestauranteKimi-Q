@@ -21,9 +21,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $resultado = $conexion->query($sql);
 
     if ($resultado->num_rows == 1) {
-        // Inicio de sesión exitoso
+        // Inicio de sesion exitoso
         $_SESSION["usuario"] = $usuario;
-        header("Location: perfil.php"); // Redirigir a la página de inicio de sesión exitosa
+        header("Location: perfil.php"); // Redirigir a la pagina de inicio de sesión exitosa
         exit();
     } else {
         // Usuario o contraseña incorrectos

@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombreUsuario = $_POST["nombreUsuario"];
     $contrasena = $_POST["contrasena"];
 
-    // Validar y procesar los datos (puedes agregar más validaciones)
+    // Validar y procesar los datos 
     if (!empty($nombreCompleto) && !empty($nombreUsuario) && !empty($contrasena)) {
         // Conectarse a la base de datos (ajusta los datos de conexión)
         $host = "127.0.0.1:3310";

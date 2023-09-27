@@ -15,7 +15,7 @@
                 session_start();
 
                 if (isset($_SESSION["usuario"])) {
-                    // Obtén el nombre del usuario de la sesión
+                    // Obtener el nombre del usuario de la sesión
                     $nombreUsuario = $_SESSION["usuario"];
 
                     // Conecta a la base de datos
@@ -158,12 +158,11 @@
         xhr.open("POST", "agregar_usuario.php", true);
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {
-                // La solicitud se completó con éxito
+                // La solicitud se completo con exito
                 var respuesta = xhr.responseText;
                 if (respuesta === "exito") {
                     alert("Usuario agregado correctamente.");
                     cerrarFormularioUsuario();
-                    // Puedes realizar alguna acción adicional si es necesario
                 } else {
                     alert("Error al agregar usuario. Por favor, inténtalo de nuevo.");
                 }
@@ -206,7 +205,7 @@
                 var respuesta = xhr.responseText;
                 if (respuesta === "exito") {
                     alert("Usuario eliminado correctamente.");
-                    // Actualizar la página o realizar otras acciones si es necesario
+                    // Actualizar la pagina o realizar otras acciones si es necesario
                     window.location.reload();
                 } else {
                     alert("Error al eliminar usuario. Por favor, inténtalo de nuevo.");
